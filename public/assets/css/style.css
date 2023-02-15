@@ -1,0 +1,51 @@
+html {
+    height: 100vh;
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-image: url("../image/matrix-4493783_960_720.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    background-color: #020303;
+    border-radius: 10%;
+    border: 2px solid white;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 290px;
+    height: 150px;
+    line-height: 10px;
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section h4 {
+    color: white;
+}
+
+section label {
+    color: #C2C2C2;
+    margin-bottom: 10px;
+}
+
+section input {
+    margin-top: 20px;
+    align-self: center;
+}
+
+button {
+    margin: 0 115px;
+}

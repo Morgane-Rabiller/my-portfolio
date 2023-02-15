@@ -1,0 +1,335 @@
+html {
+    /* Je donne le format de l'écran à mon html */
+    height: 100vh;
+    background-image: url("../image/particles-7104407_960_720.webp");
+    background-repeat: no-repeat;
+    /* Je donne à mon image de fond, la taille de mon écran*/
+    background-size: 100% 100%;
+    /* Police et écriture*/
+    font-family: 'Andika New Basic', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+/* Je fixe la div qui englobera la page et tout ce qui s'y trouvera*/
+#main {
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+#main_D {
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#little_main {
+    display:none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+}
+
+.category2 {
+    padding: 2px 25px;
+    border: solid rgb(255, 255, 255, 30%) 3px;
+    background: rgb(0,0,0, 70%);
+    font-size: 15px;
+}
+
+/* BODY */
+
+body {
+    height:100%;
+    margin: 0;
+}
+
+section {
+    display: flex;         
+}
+
+.category {
+    background-color: rgb(255, 255, 255, 30%);
+    /* background-color: rgb(50, 50, 50, 80%); */
+    margin-top: 25vh;
+    width: 240px;
+    height: 350px;
+    border-radius: 15%;
+    color: rgb(255, 255, 255, 100%);
+    text-align: center;
+}
+
+#photo {
+    border-radius: 40%;
+    border-color: white;
+    border-style: solid;
+    width: 140px;
+    margin-top: 40px;
+    margin-bottom: 33px;
+}
+
+.icon {
+    width: 125px;
+    margin-bottom: 60px;
+    margin-top: 75px;
+}
+
+article {
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    /* padding-top:50px;
+    height:50px; */
+}
+
+#bottom{
+    background-color: rgb(255, 255, 255, 33%);
+    /* background-color: rgb(50, 50, 50, 80%); */
+    width: 100%;
+    height: 45px;
+    display: flex;
+    /* align-items: center; */
+}
+
+#bottom > a {
+    border-right: solid rgb(255, 255, 255, 10%) 3px;
+    padding: 12px;
+}
+
+.icon_footer {
+    width: 23px;
+} 
+
+/* PAGE DESCRIPTION */
+
+#case {
+    /* background-color: rgb(255, 255, 255, 45%); */
+    /* background-color:rgb(125, 125, 125, 70%); */
+    /* background-color: rgb(50, 50, 50, 80%); */
+    background-color: rgb(80, 80, 80, 85%);
+    border: 10px solid white;
+    width: 50%;
+    border-radius: 15%;
+    /* color: rgb(0, 0, 94, 100%); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+#case > h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#case > p {
+    font-size: 20px;
+    /* margin: 0; */
+    text-align: justify;
+}
+
+#return {
+    text-align: center;
+    color: #29a1b0;
+}
+
+#return:hover {
+    color: #FF0093;
+}
+
+/* PAGE COMPETENCES */
+
+.logo {
+    /* Taille des logos*/
+    width: 70px;
+}
+
+/* Disposition des logos et marge autour des logos*/
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    margin: 50px;
+}
+
+/* Marge entre chaque logo*/
+.skill {
+    margin: 0 60px;
+}
+
+/* PAGE CONTACT */
+
+#contact {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    margin: 20px;
+}
+
+#contact > div > img {
+    margin-right: 20px;
+}
+
+.contact {
+    margin: 10px;
+    display: flex;
+    align-self: center;
+}
+
+#tel {
+    margin-left: -80px;
+}
+
+#adress {
+    margin-left: -151px;
+}
+
+#linkedin {
+    margin-left: -64px;
+}
+
+#github {
+    margin-left: -64px;
+}
+
+/* PAGE PROJECT */
+
+.site {
+    border: 3px white solid;
+    border-radius: 5%;
+    width: 40%;
+}
+
+#project {
+    margin: 40px;
+    text-align: center;
+}
+
+a:hover {
+    color: #FF0093;
+}
+
+a:visited {
+
+    color: white;
+}
+
+/* PAGE CAREER */
+
+
+.timeline {
+    border: 1px solid white;
+    margin : 280px 0 100px 0;
+    height: 0;
+  }
+  .timeline > ol {
+    display:flex;
+    justify-content:space-around;
+    /* J'ai mis ce padding car il y en avait un automatique a 40px qui me dérangeait */
+    padding-left: 0;
+  }
+  .timeline > ol > li {
+    list-style-type: none;
+    position:relative;
+  }
+  .timeline > ol > li > div {
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    bottom: 6px;
+    position:absolute;
+  }
+  .pink_circle {
+    border: 1px solid #FF0FE7;
+    background: #FF0FE7;
+  }
+  .blue_circle {
+    border: 1px solid #12D2C7;
+    background: #12D2C7;
+  }
+  .timeline > ol > li > p {
+    position: absolute;
+    bottom: 50px;
+    text-align:justify;
+    /* font-size: 13px; *//* 
+    font-weight: bolder;
+
+    font-weight: normal; */
+  }
+  .arrow_start {
+    border-right: 3px solid white;
+    height: 70px;
+    width: 0;
+    position: absolute;
+    top: 51.5%;
+    right: 37%;
+}
+  .list {
+    display:flex;
+    justify-content:space-around;
+    /* font-weight: normal; */
+  }
+  .list > div {
+    width: 45%;
+  }
+  b {
+      color: #FF0FE7;
+      /* #FF0EFE */
+  }
+
+/* .timeline {
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+   
+  .timeline ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+  }
+   
+  .timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 160px;
+    height: 3px;
+    background: #fff;
+  }
+   
+  .timeline ol li:last-child {
+    width: 280px;
+  }
+   
+  .timeline ol li:not(:first-child) {
+    margin-left: 14px;
+  }
+   
+  .timeline ol li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 1px);
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #F45B69;
+  } */

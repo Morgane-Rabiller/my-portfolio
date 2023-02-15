@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/css/desk.css') }}">
+{% endblock %}
+{% block title %}Mon portfolio{% endblock %}
+
+{% block body %}
+    <div id="main_D">
+        
+        <section id="case">
+            <h1>Ma description</h1>
+            <p>
+                Je m'appelle Morgane Rabiller, j'ai 25 ans et je viens de terminer une formation pour devenir développeuse web. <br> <br>
+
+                Après un long parcours à explorer des univers dans lesquels je ne me retrouvais pas (coiffure, commerce, industrie,...), j’ai découvert le développement informatique il y a maintenant 3 ans par le biais de différents sites. Après avoir passé les tests pour rentrer dans la formation O’clock que j’ai d’abord échoués,  je me suis renseigné sur les différents langages html, css, et un peu de Javascript à l’aide de différentes plateformes, après ça j’ai repassé les tests pour accéder à cette formation et je les ai réussi. J’ai donc pu intégrer la formation Développeur web et web mobile en Septembre 2021, ce qui m’a permit de passer mon titre professionnel de niveau bac +2 et de l’obtenir en Avril 2022. <br> <br>
+
+                Je suis désormais en recherche d’une entreprise qui voudra bien m’accueillir pour mon premier emploi ou bien qui acceptera de m’employer comme alternante pour devenir concepteur développeur d’application et passer le niveau bac +3. 
+            </p>
+            <a href="{{ path('app_desk') }}" id="return">Retour à la page précédente</a>
+        </section>
+
+        <footer>
+            <div id="little_main">
+                <a href="{{ path('app_description') }}" class="category2"><h2>Ma description</h2></a>
+                <a href="{{ path('app_career') }}" class="category2"><h2>Mon parcours</h2></a>
+                <a href="{{ path('app_skills') }}" class="category2"><h2>Mes compétences</h2></a>
+                <a href="{{ path('app_project') }}" class="category2"><h2>Mes projets</h2></a>
+                <a href="{{ path('app_contact') }}" class="category2"><h2>Me contacter</h2></a>
+            </div>
+            
+            <div id="bottom">
+                    <a href="#" id="windows">
+                        <img src="{{ asset('assets/image/icons8-windows-10.svg') }}">
+                    </a>
+                    <a href="https://www.google.fr" id="chrome">
+                        <img src="{{ asset('assets/image/icons8-chrome-30.png') }}">
+                    </a>
+            </div>
+        </footer>
+
+    </div>
+{% endblock %}
