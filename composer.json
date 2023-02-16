@@ -4,7 +4,6 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "malibrairie/malibrairie": "1.0",
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
