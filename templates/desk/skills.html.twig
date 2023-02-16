@@ -26,24 +26,7 @@
             <a href="{{ path('app_desk') }}" id="return">Retour à la page précédente</a>
         </section>
 
-        <footer>
-            <div id="little_main">
-                <a href="{{ path('app_description') }}" class="category2"><h2>Ma description</h2></a>
-                <a href="{{ path('app_career') }}" class="category2"><h2>Mon parcours</h2></a>
-                <a href="{{ path('app_skills') }}" class="category2"><h2>Mes compétences</h2></a>
-                <a href="{{ path('app_project') }}" class="category2"><h2>Mes projets</h2></a>
-                <a href="{{ path('app_contact') }}" class="category2"><h2>Me contacter</h2></a>
-            </div>
-            
-            <div id="bottom">
-                    <a href="#" id="windows">
-                        <img src="{{ asset('assets/image/icons8-windows-10.svg') }}">
-                    </a>
-                    <a href="https://www.google.fr" id="chrome">
-                        <img src="{{ asset('assets/image/icons8-chrome-30.png') }}">
-                    </a>
-            </div>
-        </footer>
+        {% extends '_footer.html.twig' %}
 
     </div>
 {% endblock %}
