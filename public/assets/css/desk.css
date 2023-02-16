@@ -75,10 +75,20 @@ section {
     margin-bottom: 33px;
 }
 
+#photo:hover {
+    width: 170px;
+    transition: 1s;
+}
+
 .icon {
     width: 125px;
     margin-bottom: 60px;
     margin-top: 75px;
+}
+
+.icon:hover {
+    width: 175px;
+    transition: 1s;
 }
 
 article {
